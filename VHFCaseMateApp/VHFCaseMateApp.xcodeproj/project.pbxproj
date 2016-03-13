@@ -14,6 +14,9 @@
 		5C6511621C96142C008BA10E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C6511611C96142C008BA10E /* Images.xcassets */; };
 		5C6511651C96142C008BA10E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6511631C96142C008BA10E /* LaunchScreen.xib */; };
 		5C6511711C96142D008BA10E /* VHFCaseMateAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6511701C96142D008BA10E /* VHFCaseMateAppTests.m */; };
+		5C68A39D1C961567000827A6 /* FrequencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C68A39C1C961567000827A6 /* FrequencyManager.m */; };
+		5C68A39F1C96175A000827A6 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C68A39E1C96175A000827A6 /* ExternalAccessory.framework */; };
+		5C68A3A21C96177B000827A6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C68A3A01C96177B000827A6 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		5C65116A1C96142D008BA10E /* VHFCaseMateAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VHFCaseMateAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C65116F1C96142D008BA10E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C6511701C96142D008BA10E /* VHFCaseMateAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHFCaseMateAppTests.m; sourceTree = "<group>"; };
+		5C68A39B1C961567000827A6 /* FrequencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequencyManager.h; sourceTree = "<group>"; };
+		5C68A39C1C961567000827A6 /* FrequencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequencyManager.m; sourceTree = "<group>"; };
+		5C68A39E1C96175A000827A6 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		5C68A3A01C96177B000827A6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5C68A3A11C96177B000827A6 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C68A3A21C96177B000827A6 /* AudioToolbox.framework in Frameworks */,
+				5C68A39F1C96175A000827A6 /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +76,9 @@
 				5C6511531C96142C008BA10E /* VHFCaseMateApp */,
 				5C65116D1C96142D008BA10E /* VHFCaseMateAppTests */,
 				5C6511521C96142C008BA10E /* Products */,
+				5C68A3A01C96177B000827A6 /* AudioToolbox.framework */,
+				5C68A3A11C96177B000827A6 /* AudioUnit.framework */,
+				5C68A39E1C96175A000827A6 /* ExternalAccessory.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +98,8 @@
 				5C6511591C96142C008BA10E /* AppDelegate.m */,
 				5C65115B1C96142C008BA10E /* ViewController.h */,
 				5C65115C1C96142C008BA10E /* ViewController.m */,
+				5C68A39B1C961567000827A6 /* FrequencyManager.h */,
+				5C68A39C1C961567000827A6 /* FrequencyManager.m */,
 				5C65115E1C96142C008BA10E /* Main.storyboard */,
 				5C6511611C96142C008BA10E /* Images.xcassets */,
 				5C6511631C96142C008BA10E /* LaunchScreen.xib */,
@@ -221,6 +236,7 @@
 			files = (
 				5C65115D1C96142C008BA10E /* ViewController.m in Sources */,
 				5C65115A1C96142C008BA10E /* AppDelegate.m in Sources */,
+				5C68A39D1C961567000827A6 /* FrequencyManager.m in Sources */,
 				5C6511571C96142C008BA10E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +432,7 @@
 				5C6511761C96142D008BA10E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C6511771C96142D008BA10E /* Build configuration list for PBXNativeTarget "VHFCaseMateAppTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +441,7 @@
 				5C6511791C96142D008BA10E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
